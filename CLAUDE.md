@@ -69,13 +69,12 @@ Use Next.js `metadata` exports (not `<Head>`) for all SEO metadata.
 ## Branding
 
 ### Colors
-| Token | Hex | Usage |
+| Token | Value | Usage |
 |---|---|---|
 | Blue (brand) | `#00aeef` | Header accent bar, links hover, CTAs |
 | Orange (brand) | `#F5A623` | Logo icon, accent highlights |
-| Navy | `#1a2f4a` | Header main background |
 | White | `#ffffff` | Page background |
-| Foreground | `#111827` | Body text |
+| Foreground (text) | `oklch(37% 0.013 285.805)` = `text-zinc-700` | **All body text, headings, and UI text** — use `text-zinc-700` in Tailwind |
 
 ### Header Layout
 - **Top:** 10px blue accent bar (`#00aeef`), full width
