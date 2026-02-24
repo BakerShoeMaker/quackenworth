@@ -52,9 +52,9 @@ function YouTubeIcon() {
 
 
 const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com", Icon: InstagramIcon },
-  { label: "Facebook", href: "https://facebook.com", Icon: FacebookIcon },
-  { label: "YouTube", href: "https://youtube.com", Icon: YouTubeIcon },
+  { label: "Instagram", href: "https://www.instagram.com/quackenworth/", Icon: InstagramIcon },
+  { label: "Facebook", href: "https://www.facebook.com/quackenworth", Icon: FacebookIcon },
+  { label: "YouTube", href: "https://www.youtube.com/@quackenworthy", Icon: YouTubeIcon },
 ];
 
 export default function Footer() {
@@ -94,7 +94,7 @@ export default function Footer() {
             </a>
           ))}
           <a
-            href="https://apps.apple.com"
+            href="https://apps.apple.com/us/developer/quackenworth/id518210161"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Download on the App Store"

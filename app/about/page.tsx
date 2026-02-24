@@ -58,70 +58,8 @@ export default function About() {
             History of Quackenworth
           </h2>
           <p className="text-lg text-zinc-500 leading-relaxed">
-            Quackenworth was founded by David Hollaway in October of 2004. Throughout the years the company has published hundreds of books, workbooks as well as various websites and digital products. In August of 2013 Quackenworth was selected as one of the winners of the Bill &amp; Melinda Gates Foundation Literacy Courseware Challenge. The competition included the nation's most innovative educational and technology companies, non-profits, and entrepreneurs. Quackenworth was one of a select group of companies chosen for the Minimum Viable Product (MVP) category. Today the company is focused on creating fun educational apps for mobile devices. The company currently has five apps in the Apple App Store.
+            Quackenworth was founded by David Hollaway in October of 2004. Throughout the years the company has published hundreds of books, workbooks as well as various websites and digital products. In August of 2013 Quackenworth was selected as one of the winners of the Bill &amp; Melinda Gates Foundation Literacy Courseware Challenge. The competition included the nation's most innovative educational and technology companies, non-profits, and entrepreneurs. Quackenworth was one of a select group of companies chosen for the Minimum Viable Product (MVP) category. Today the company is focused on creating fun educational apps for mobile devices. The company currently has apps in the Apple App Store and educational websites.
           </p>
-        </div>
-      </section>
-
-      {/* ── Row 3: Mission & Values ── */}
-      <section className="bg-gray-50 py-20 px-6 border-b border-gray-100">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-700 mb-4">
-              What Drives Us
-            </h2>
-            <p className="text-zinc-500 leading-relaxed max-w-xl mx-auto">
-              Three principles shape every product we ship.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="w-12 h-12 rounded-xl bg-[#00aeef]/10 flex items-center justify-center mb-5">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-[#00aeef]" aria-hidden="true">
-                  <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
-                  <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-zinc-700 mb-3">Curriculum-First Design</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">
-                Every product starts with learning standards, not features. We work
-                backward from what students need to know at each grade level, then
-                build tools that make mastering those skills feel natural.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="w-12 h-12 rounded-xl bg-[#F5A623]/10 flex items-center justify-center mb-5">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-[#F5A623]" aria-hidden="true">
-                  <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM9 7.5A.75.75 0 0 0 9 9h1.5c.98 0 1.813.626 2.122 1.5H9A.75.75 0 0 0 9 12h3.622a2.251 2.251 0 0 1-2.122 1.5H9a.75.75 0 0 0-.53 1.28l3 3a.75.75 0 1 0 1.06-1.06l-1.74-1.74A3.751 3.751 0 0 0 14.378 12H15a.75.75 0 0 0 0-1.5h-.622A3.75 3.75 0 0 0 10.5 7.5H9Z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-zinc-700 mb-3">Always Free to Start</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">
-                We believe cost should never be a barrier to great learning tools.
-                Our core apps are free to use, so every student — regardless of
-                school budget or family income — has access to quality resources.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="w-12 h-12 rounded-xl bg-[#00aeef]/10 flex items-center justify-center mb-5">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-[#00aeef]" aria-hidden="true">
-                  <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
-                  <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-zinc-700 mb-3">Trusted by Families & Schools</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">
-                We design with both teachers and parents as equal partners. Our
-                products work seamlessly in classrooms and at home, keeping
-                everyone aligned on a student's progress and goals.
-              </p>
-            </div>
-
-          </div>
         </div>
       </section>
 

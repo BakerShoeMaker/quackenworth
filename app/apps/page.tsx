@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Breadcrumb from "../components/Breadcrumb";
 import AppStoreBadge from "../components/AppStoreBadge";
+import ScreenshotCarousel from "../components/ScreenshotCarousel";
 
 export const metadata: Metadata = {
   title: "Apps | Quackenworth Educational Apps for K–12 Students",
@@ -15,32 +17,29 @@ export const metadata: Metadata = {
 };
 
 // ── App data — add one object per app ────────────────────────────────────────
-// Image fields: set to null while placeholders are active, then replace with
-// the real path once assets are ready (e.g. bannerImage: "/apps/app1-banner.webp")
+// screenshots: portrait mockup PNGs (640 × 1136 recommended)
+// logoImage:   App Store icon (1024 × 1024 PNG)
+// Set either to null to fall back to placeholder UI
 const apps = [
   {
     id: 1,
-    name: "App Name Placeholder",
-    tagline: "A short, compelling tagline for this app goes here.",
+    name: "Time to Multiply",
+    tagline: "Build multiplication fact fluency — fast.",
     description:
-      "This is a placeholder description. Describe what the app does, its key learning objectives, standout features, and which curriculum standards it supports. Aim for 2–3 sentences that speak directly to teachers and parents.",
+      "A classroom-proven multiplication practice tool built for elementary students. Time to Multiply uses timed drills, visual grids, and instant feedback to help students build fact fluency at their own pace — perfect for both in-class practice and homework assignments.",
     gradeLevel: "Elementary",
     ageRange: "Ages 5–10",
-    subject: "Subject Area",
+    subject: "Math",
+    isNew: true,
     appStoreUrl: "https://apps.apple.com",
-    logoImage: null as string | null,  // 1024 × 1024 PNG (App Store icon)
-  },
-  {
-    id: 2,
-    name: "App Name Placeholder",
-    tagline: "A short, compelling tagline for this app goes here.",
-    description:
-      "This is a placeholder description. Describe what the app does, its key learning objectives, standout features, and which curriculum standards it supports. Aim for 2–3 sentences that speak directly to teachers and parents.",
-    gradeLevel: "Middle School",
-    ageRange: "Ages 11–13",
-    subject: "Subject Area",
-    appStoreUrl: "https://apps.apple.com",
-    logoImage: null as string | null,
+    logoImage: "/time-to-multiply.png" as string | null,
+    screenshots: [
+      { src: "/time-to-multiply-screen with grid.png",     alt: "Time to Multiply — multiplication grid gameplay screen showing 11 × 11" },
+      { src: "/time-to-multiply-screen with time number.png", alt: "Time to Multiply — timed gameplay screen showing 4 × 5" },
+      { src: "/time-to-multiply-celebration.png",          alt: "Time to Multiply — gameplay screen showing 9 × 6" },
+      { src: "/time-to-multiply-results.png",              alt: "Time to Multiply — results screen showing score summary" },
+      { src: "/time-to-multiply-setup screen.png",         alt: "Time to Multiply — settings screen for selecting game options" },
+    ] as { src: string; alt: string }[] | null,
   },
 ];
 
@@ -74,17 +73,31 @@ export default function Apps() {
     <main>
       <Breadcrumb items={[{ label: "Apps" }]} />
 
-      {/* ── Hero (compact) ── */}
-      <section className="bg-white px-6 py-14 border-b border-gray-100">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-zinc-700 leading-tight mb-4">
-            Our Apps
-          </h1>
-          <p className="text-lg text-zinc-500 leading-relaxed max-w-2xl mx-auto">
-            Explore our growing library of educational apps for K–12 students.
-            Each app is built around real curriculum goals — available for
-            elementary, middle school, and high school learners.
-          </p>
+      {/* ── Hero ── */}
+      <section className="relative border-b border-gray-100 overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="/child on iPad.png"
+          alt="Child happily using an educational app on a tablet"
+          fill
+          className="object-cover object-[center_40%]"
+          priority
+        />
+        {/* Overlay — ensures text contrast */}
+        <div className="absolute inset-0 bg-[#1a2f4a]/65" aria-hidden="true" />
+
+        {/* Content */}
+        <div className="relative z-10 px-6 py-28 md:py-40">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4 drop-shadow">
+              Our Apps
+            </h1>
+            <p className="text-lg text-white/85 leading-relaxed max-w-2xl mx-auto drop-shadow">
+              Explore our growing library of educational apps for elementary school students.
+              Each app is built make learning fun and interactive — available for
+              preschool and elementary school students.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -105,20 +118,20 @@ export default function Apps() {
               }`}
             >
 
-              {/* Portrait screenshot placeholder
-                  Replace with:
-                  <Image src={app.screenshotImage} alt={`${app.name} screenshot`}
-                    width={200} height={356} className="rounded-2xl shadow-md" />
-                  Recommended: 640 × 1136 px PNG or WebP                        */}
-              <div className="shrink-0 flex justify-center">
-                <div className="w-50 aspect-9/16 bg-gray-200 rounded-2xl shadow-md flex flex-col items-center justify-center text-gray-400 text-center px-4 gap-3">
-                  <ImagePlaceholderIcon className="w-10 h-10" />
-                  <span className="text-xs font-medium uppercase tracking-widest">
-                    Screenshot
-                  </span>
-                  <span className="text-xs opacity-60">640 × 1136 · PNG</span>
+              {/* Screenshot — carousel if assets exist, placeholder otherwise */}
+              {app.screenshots ? (
+                <ScreenshotCarousel screenshots={app.screenshots} />
+              ) : (
+                <div className="shrink-0 flex justify-center">
+                  <div className="w-50 aspect-9/16 bg-gray-200 rounded-2xl shadow-md flex flex-col items-center justify-center text-gray-400 text-center px-4 gap-3">
+                    <ImagePlaceholderIcon className="w-10 h-10" />
+                    <span className="text-xs font-medium uppercase tracking-widest">
+                      Screenshot
+                    </span>
+                    <span className="text-xs opacity-60">640 × 1136 · PNG</span>
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* App details */}
               <div className="flex-1 text-center md:text-left">
@@ -136,19 +149,31 @@ export default function Apps() {
                   <span className="text-xs text-zinc-400">· {app.subject}</span>
                 </div>
 
-                {/* App icon logo + name ────────────────────────────────────
-                    Replace the logo placeholder with:
-                    <Image src={app.logoImage} alt={`${app.name} icon`}
-                      width={64} height={64}
-                      className="rounded-2xl shadow-sm shrink-0" />
-                    Recommended: 1024 × 1024 px PNG (App Store icon)          */}
+                {/* App icon + name */}
                 <div className="flex items-center justify-center md:justify-start gap-4 mb-3">
-                  <div className="w-16 h-16 rounded-2xl bg-gray-200 shrink-0 flex items-center justify-center text-gray-400 shadow-sm">
-                    <ImagePlaceholderIcon className="w-7 h-7" />
+                  {app.logoImage ? (
+                    <Image
+                      src={app.logoImage}
+                      alt={`${app.name} app icon`}
+                      width={64}
+                      height={64}
+                      className="rounded-2xl shadow-sm shrink-0"
+                    />
+                  ) : (
+                    <div className="w-16 h-16 rounded-2xl bg-gray-200 shrink-0 flex items-center justify-center text-gray-400 shadow-sm">
+                      <ImagePlaceholderIcon className="w-7 h-7" />
+                    </div>
+                  )}
+                  <div className="flex flex-wrap items-center gap-3">
+                    <h2 className="text-3xl md:text-4xl font-bold text-zinc-700">
+                      {app.name}
+                    </h2>
+                    {app.isNew && (
+                      <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
+                        New
+                      </span>
+                    )}
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-zinc-700">
-                    {app.name}
-                  </h2>
                 </div>
 
                 <p className="text-lg text-[#00aeef] font-medium mb-5">
