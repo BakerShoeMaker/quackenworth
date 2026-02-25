@@ -71,27 +71,23 @@ export default function About() {
               Who We Serve
             </h2>
             <p className="text-zinc-500 leading-relaxed max-w-xl mx-auto">
-              From kindergarten to senior year, our tools are built for every
-              stage of the K–12 journey.
+              From preschool to senior year, our tools are built for every
+              stage of the K–12 journey. Teachers and parents can find engaging, age-appropriate resources to support learning and growth at every grade level.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
             <div className="py-8 px-6 rounded-2xl border border-gray-100 bg-gray-50">
               <p className="text-4xl font-bold text-[#00aeef] mb-2">K–5</p>
               <p className="font-semibold text-zinc-700 mb-1">Elementary School</p>
-              <p className="text-sm text-zinc-500">Ages 5–10 · Reading, math foundations, and early STEM</p>
+              <p className="text-sm text-zinc-500">Ages 5–10 · Reading and math foundations</p>
             </div>
             <div className="py-8 px-6 rounded-2xl border border-gray-100 bg-gray-50">
-              <p className="text-4xl font-bold text-[#F5A623] mb-2">6–8</p>
-              <p className="font-semibold text-zinc-700 mb-1">Middle School</p>
-              <p className="text-sm text-zinc-500">Ages 11–13 · Critical thinking, science, and language arts</p>
+              <p className="text-4xl font-bold text-[#F5A623] mb-2">6–12</p>
+              <p className="font-semibold text-zinc-700 mb-1">Middle/High School</p>
+              <p className="text-sm text-zinc-500">Computer Science, science, history, and much more.</p>
             </div>
-            <div className="py-8 px-6 rounded-2xl border border-gray-100 bg-gray-50">
-              <p className="text-4xl font-bold text-zinc-400 mb-2">9–12</p>
-              <p className="font-semibold text-zinc-700 mb-1">High School</p>
-              <p className="text-sm text-zinc-500">Ages 14–18 · STEM, test prep, and college readiness</p>
-            </div>
+ 
           </div>
         </div>
       </section>
@@ -103,8 +99,7 @@ export default function About() {
             See What We've Built
           </h2>
           <p className="text-zinc-500 leading-relaxed mb-8 max-w-xl mx-auto">
-            Explore our full app library or find resources tailored specifically
-            for teachers or parents.
+            Parents and teachers can explore our engaging products.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

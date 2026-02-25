@@ -36,13 +36,11 @@ export default function Parents() {
         <div className="absolute inset-0 bg-black/50" />
 
         {/* Content */}
-        <div className="relative z-10 px-6 pt-40 pb-24 md:pt-48 md:pb-32">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-[#00aeef] mb-4">
-              For Parents
-            </span>
+        <div className="relative z-10 px-6 pt-56 pb-24 md:pt-64 md:pb-32">
+          <div className="max-w-5xl mx-auto text-center">
+        
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              Learning at Home, Made Easy
+              Helping Parents Invest in Education!
             </h1>
             <p className="text-lg text-white/85 leading-relaxed max-w-2xl mx-auto mb-8">
               Quackenworth builds educational apps and websites that make learning
