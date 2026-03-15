@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/teachers", label: "Teachers" },
   { href: "/parents", label: "Parents" },
   { href: "/about", label: "About" },
+  { href: "/promos", label: "Promos" },
 ];
 
 export default function NavMenu() {

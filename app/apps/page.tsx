@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import AppStoreBadge from "../components/AppStoreBadge";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
@@ -32,6 +33,7 @@ const apps = [
     subject: "Math",
     isNew: true,
     appStoreUrl: "https://apps.apple.com",
+    detailUrl: "/apps/time-to-multiply",
     logoImage: "/time-to-multiply.png" as string | null,
     screenshots: [
       { src: "/time-to-multiply-screen with grid.png",     alt: "Time to Multiply — multiplication grid gameplay screen showing 11 × 11" },
@@ -165,9 +167,18 @@ export default function Apps() {
                     </div>
                   )}
                   <div className="flex flex-wrap items-center gap-3">
-                    <h2 className="text-3xl md:text-4xl font-bold text-zinc-700">
-                      {app.name}
-                    </h2>
+                    {"detailUrl" in app && app.detailUrl ? (
+                      <Link
+                        href={app.detailUrl as string}
+                        className="text-3xl md:text-4xl font-bold text-zinc-700 hover:text-[#00aeef] transition-colors"
+                      >
+                        {app.name}
+                      </Link>
+                    ) : (
+                      <h2 className="text-3xl md:text-4xl font-bold text-zinc-700">
+                        {app.name}
+                      </h2>
+                    )}
                     {app.isNew && (
                       <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
                         New
@@ -183,15 +194,25 @@ export default function Apps() {
                   {app.description}
                 </p>
 
-                <a
-                  href={app.appStoreUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Download ${app.name} on the App Store`}
-                  className="inline-block hover:opacity-80 transition-opacity"
-                >
-                  <AppStoreBadge />
-                </a>
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                  <a
+                    href={app.appStoreUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Download ${app.name} on the App Store`}
+                    className="inline-block hover:opacity-80 transition-opacity"
+                  >
+                    <AppStoreBadge />
+                  </a>
+                  {"detailUrl" in app && app.detailUrl && (
+                    <Link
+                      href={app.detailUrl as string}
+                      className="text-[#00aeef] font-semibold hover:underline"
+                    >
+                      Learn more →
+                    </Link>
+                  )}
+                </div>
               </div>
 
             </div>

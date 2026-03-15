@@ -23,12 +23,13 @@ export default function Parents() {
       <Breadcrumb items={[{ label: "Parents" }]} />
 
       {/* ── Row 1: Hero ── */}
-      <section className="relative overflow-hidden border-b border-gray-100">
+      <section className="relative min-h-125 overflow-hidden border-b border-gray-100">
         {/* Background image */}
         <Image
           src="/parents with child.png"
           alt=""
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />
@@ -36,7 +37,7 @@ export default function Parents() {
         <div className="absolute inset-0 bg-black/50" />
 
         {/* Content */}
-        <div className="relative z-10 px-6 pt-56 pb-24 md:pt-64 md:pb-32">
+        <div className="relative z-10 px-6 pt-72 pb-24 md:pt-80 md:pb-32">
           <div className="max-w-5xl mx-auto text-center">
         
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
