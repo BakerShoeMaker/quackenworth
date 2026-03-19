@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
-import AppStoreBadge from "../components/AppStoreBadge";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
 
 export const metadata: Metadata = {
@@ -73,10 +72,9 @@ function ImagePlaceholderIcon({ className = "w-8 h-8" }: { className?: string })
 export default function Apps() {
   return (
     <main>
-      <Breadcrumb items={[{ label: "Apps" }]} />
-
       {/* ── Hero ── */}
       <section className="relative border-b border-gray-100 overflow-hidden">
+        <Breadcrumb items={[{ label: "Apps" }]} transparent />
         {/* Background image */}
         <Image
           src="/child on iPad.png"
@@ -181,7 +179,7 @@ export default function Apps() {
                     )}
                     {app.isNew && (
                       <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
-                        New
+                        Coming soon
                       </span>
                     )}
                   </div>
@@ -195,15 +193,6 @@ export default function Apps() {
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-                  <a
-                    href={app.appStoreUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Download ${app.name} on the App Store`}
-                    className="inline-block hover:opacity-80 transition-opacity"
-                  >
-                    <AppStoreBadge />
-                  </a>
                   {"detailUrl" in app && app.detailUrl && (
                     <Link
                       href={app.detailUrl as string}

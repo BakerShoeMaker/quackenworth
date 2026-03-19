@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
-import AppStoreBadge from "../components/AppStoreBadge";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
 
 export const metadata: Metadata = {
@@ -20,10 +19,9 @@ export const metadata: Metadata = {
 export default function Parents() {
   return (
     <main>
-      <Breadcrumb items={[{ label: "Parents" }]} />
-
       {/* ── Row 1: Hero ── */}
       <section className="relative min-h-125 overflow-hidden border-b border-gray-100">
+        <Breadcrumb items={[{ label: "Parents" }]} transparent />
         {/* Background image */}
         <Image
           src="/parents with child.png"
@@ -114,7 +112,7 @@ export default function Parents() {
                     Time to Multiply
                   </h2>
                   <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
-                    New
+                    Coming soon
                   </span>
                 </div>
               </div>
@@ -129,15 +127,6 @@ export default function Parents() {
                 while building real math fact fluency.
               </p>
 
-              <a
-                href="https://apps.apple.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Download Time to Multiply on the App Store"
-                className="inline-block hover:opacity-80 transition-opacity"
-              >
-                <AppStoreBadge />
-              </a>
             </div>
 
           </div>

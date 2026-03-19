@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
-import AppStoreBadge from "../components/AppStoreBadge";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
 
 export const metadata: Metadata = {
@@ -119,7 +118,7 @@ export default function Teachers() {
                     Time to Multiply
                   </h2>
                   <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
-                    New
+                    Coming soon
                   </span>
                 </div>
               </div>
@@ -135,15 +134,6 @@ export default function Teachers() {
                 homework assignments.
               </p>
 
-              <a
-                href="https://apps.apple.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Download Time to Multiply on the App Store"
-                className="inline-block hover:opacity-80 transition-opacity"
-              >
-                <AppStoreBadge />
-              </a>
             </div>
 
           </div>
@@ -192,13 +182,21 @@ export default function Teachers() {
             {/* Card 2 — Middle School */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
               <div className="w-full h-48 bg-white flex items-center justify-center p-6">
-                <Image
-                  src="/donow.png"
-                  alt="DoNow Warmups logo"
-                  width={280}
-                  height={160}
-                  className="object-contain w-full h-full"
-                />
+                <a
+                  href="https://www.donowwarmups.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit DoNow Warmups website"
+                  className="w-full h-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                >
+                  <Image
+                    src="/donow.png"
+                    alt="DoNow Warmups logo"
+                    width={280}
+                    height={160}
+                    className="object-contain w-full h-full"
+                  />
+                </a>
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <span className="text-xs font-semibold uppercase tracking-widest text-[#F5A623] mb-2">
@@ -217,13 +215,21 @@ export default function Teachers() {
             {/* Card 3 — High School */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
               <div className="w-full h-48 bg-white flex items-center justify-center p-6">
-                <Image
-                  src="/rewardmyclass.png"
-                  alt="RewardMyClass logo"
-                  width={280}
-                  height={160}
-                  className="object-contain w-full h-full"
-                />
+                <a
+                  href="https://www.rewardmyclass.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit RewardMyClass website"
+                  className="w-full h-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                >
+                  <Image
+                    src="/rewardmyclass.png"
+                    alt="RewardMyClass logo"
+                    width={280}
+                    height={160}
+                    className="object-contain w-full h-full"
+                  />
+                </a>
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <span className="text-xs font-semibold uppercase tracking-widest text-zinc-400 mb-2">

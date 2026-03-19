@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb";
-import AppStoreBadge from "../../components/AppStoreBadge";
 import ScreenshotCarousel from "../../components/ScreenshotCarousel";
 
 export const metadata: Metadata = {
@@ -81,7 +80,7 @@ export default function TimeToMultiply() {
               <span className="text-xs text-zinc-400">Ages 5–10</span>
               <span className="text-xs text-zinc-400">· Math</span>
               <span className="inline-block bg-[#F5A623] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-                New
+                Coming soon
               </span>
             </div>
 
@@ -108,15 +107,6 @@ export default function TimeToMultiply() {
               for both in-class practice and homework assignments.
             </p>
 
-            <a
-              href="https://apps.apple.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Time to Multiply on the App Store"
-              className="inline-block hover:opacity-80 transition-opacity"
-            >
-              <AppStoreBadge />
-            </a>
           </div>
 
           {/* Hero carousel */}
@@ -238,15 +228,6 @@ export default function TimeToMultiply() {
             tool they need to master multiplication for good.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="https://apps.apple.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Time to Multiply on the App Store"
-              className="inline-block hover:opacity-80 transition-opacity"
-            >
-              <AppStoreBadge />
-            </a>
             <Link
               href="/apps"
               className="border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:border-[#00aeef] hover:text-[#00aeef] transition-colors"
