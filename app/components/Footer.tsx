@@ -6,6 +6,7 @@ const navLinks = [
   { label: "Teachers", href: "/teachers" },
   { label: "Parents", href: "/parents" },
   { label: "About", href: "/about" },
+  { label: "Articles", href: "/articles" },
   { label: "Contact", href: "/contact" },
 ];
 

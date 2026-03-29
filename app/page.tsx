@@ -138,7 +138,7 @@ export default function Home() {
             Discover Our Full App Library
           </h2>
           <p className="text-lg text-zinc-500 leading-relaxed mb-8 max-w-xl mx-auto">
-            From phonics to algebra, our growing collection of apps covers every
+            From phonics to math, our growing collection of apps covers every
             subject and grade level — filterable by age group so you always find
             the right fit.
           </p>
