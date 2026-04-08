@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
+import AppStoreBadge from "../components/AppStoreBadge";
 
 export const metadata: Metadata = {
   title: "For Teachers | Quackenworth Classroom Tools & Resources",
@@ -118,7 +119,7 @@ export default function Teachers() {
                     Time to Multiply
                   </h2>
                   <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
-                    Coming soon
+                    Now Available
                   </span>
                 </div>
               </div>
@@ -133,6 +134,16 @@ export default function Teachers() {
                 at their own pace — perfect for both in-class practice and
                 homework assignments.
               </p>
+
+              <a
+                href="https://apps.apple.com/us/app/time-to-multiply/id6760323272?ppid=4c4fef66-da30-49cf-81d1-27f1e6651017"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download Time to Multiply on the App Store"
+                className="inline-flex hover:opacity-80 transition-opacity"
+              >
+                <AppStoreBadge />
+              </a>
 
             </div>
 

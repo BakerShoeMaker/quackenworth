@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb";
 import ScreenshotCarousel from "../../components/ScreenshotCarousel";
+import AppStoreBadge from "../../components/AppStoreBadge";
 
 export const metadata: Metadata = {
   title: "Time to Multiply | Multiplication App for Kids — Quackenworth",
@@ -80,7 +81,7 @@ export default function TimeToMultiply() {
               <span className="text-xs text-zinc-400">Ages 5–10</span>
               <span className="text-xs text-zinc-400">· Math</span>
               <span className="inline-block bg-[#F5A623] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-                Coming soon
+                Now Available
               </span>
             </div>
 
@@ -106,6 +107,16 @@ export default function TimeToMultiply() {
               feedback to help students build fact fluency at their own pace — perfect
               for both in-class practice and homework assignments.
             </p>
+
+            <a
+              href="https://apps.apple.com/us/app/time-to-multiply/id6760323272"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Time to Multiply on the App Store"
+              className="inline-flex hover:opacity-80 transition-opacity"
+            >
+              <AppStoreBadge />
+            </a>
 
           </div>
 

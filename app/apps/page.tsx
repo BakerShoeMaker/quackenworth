@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
+import AppStoreBadge from "../components/AppStoreBadge";
 
 export const metadata: Metadata = {
   title: "Apps | Quackenworth Educational Apps for K–12 Students",
@@ -31,7 +32,7 @@ const apps = [
     ageRange: "Ages 5–10",
     subject: "Math",
     isNew: true,
-    appStoreUrl: "https://apps.apple.com",
+    appStoreUrl: "https://apps.apple.com/us/app/time-to-multiply/id6760323272",
     detailUrl: "/apps/time-to-multiply",
     logoImage: "/time-to-multiply.png" as string | null,
     screenshots: [
@@ -179,7 +180,7 @@ export default function Apps() {
                     )}
                     {app.isNew && (
                       <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
-                        Coming soon
+                        Now Available
                       </span>
                     )}
                   </div>
@@ -200,6 +201,17 @@ export default function Apps() {
                     >
                       Learn more →
                     </Link>
+                  )}
+                  {app.appStoreUrl && (
+                    <a
+                      href={app.appStoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Download ${app.name} on the App Store`}
+                      className="inline-flex hover:opacity-80 transition-opacity"
+                    >
+                      <AppStoreBadge />
+                    </a>
                   )}
                 </div>
               </div>
