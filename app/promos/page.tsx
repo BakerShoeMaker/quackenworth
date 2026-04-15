@@ -26,6 +26,32 @@ export default function Promos() {
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold text-zinc-700 mb-6 text-center">
+            Fruit Rocket 3 — Coming Soon
+          </h2>
+
+          <div className="w-full">
+            <video
+              src="/fruit rocket 3 coming soon.mp4"
+              controls
+              playsInline
+              className="w-full aspect-video object-cover rounded-xl shadow-md"
+            />
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-zinc-700 mt-16 mb-6 text-center">
+            Cabbage Heads in the Lab — Time to Multiply
+          </h2>
+
+          <div className="w-full">
+            <video
+              src="/Cabbage Heads in the lab withTime to Multiply.mp4"
+              controls
+              playsInline
+              className="w-full aspect-video object-cover rounded-xl shadow-md"
+            />
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-zinc-700 mt-16 mb-6 text-center">
             Let&apos;s get back to work!
           </h2>
 

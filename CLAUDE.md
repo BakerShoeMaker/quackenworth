@@ -120,6 +120,10 @@ Every page and component **must** be fully responsive across all three breakpoin
 - No `use client` unless interactivity requires it — prefer React Server Components
 - Run `npm run lint` before committing
 
+## Promos Page (`/promos`)
+
+- Newly added videos must always be placed **first** (at the top) of the video list, pushing older videos down.
+
 ## Commands
 
 ```bash
