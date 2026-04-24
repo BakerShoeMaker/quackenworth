@@ -16,6 +16,22 @@ export const metadata: Metadata = {
   },
   description:
     "Quackenworth builds educational apps and websites for K–12 teachers and parents, covering elementary, middle school, and high school students.",
+  openGraph: {
+    siteName: "Quackenworth",
+    title: "Quackenworth | Educational Apps for K–12",
+    description:
+      "Quackenworth builds educational apps and websites for K–12 teachers and parents, covering elementary, middle school, and high school students.",
+    images: ["/og-image.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quackenworth | Educational Apps for K–12",
+    description:
+      "Quackenworth builds educational apps and websites for K–12 teachers and parents, covering elementary, middle school, and high school students.",
+    images: ["/og-image.png"],
+  },
+  metadataBase: new URL("https://www.quackenworth.com"),
 };
 
 export default function RootLayout({

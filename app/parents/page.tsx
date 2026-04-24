@@ -26,7 +26,7 @@ export default function Parents() {
         {/* Background image */}
         <Image
           src="/parents with child.png"
-          alt=""
+          alt="Parent and child using an educational app together at home"
           fill
           sizes="100vw"
           className="object-cover object-center"

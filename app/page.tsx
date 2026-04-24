@@ -15,9 +15,34 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Quackenworth",
+  url: "https://www.quackenworth.com",
+  logo: "https://www.quackenworth.com/logo.png",
+  description:
+    "Quackenworth builds educational apps and websites for K–12 teachers and parents.",
+  sameAs: [
+    "https://www.instagram.com/quackenworth/",
+    "https://www.facebook.com/quackenworth",
+    "https://www.youtube.com/@quackenworthy",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "info@quackenworth.com",
+    contactType: "customer support",
+  },
+};
+
 export default function Home() {
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <main>
 
       {/* ── Row 1: Main Hero ── */}
       <section className="relative min-h-[80vh] flex items-end px-6 py-16 overflow-hidden">
@@ -152,5 +177,6 @@ export default function Home() {
       </section>
 
     </main>
+    </>
   );
 }

@@ -132,8 +132,25 @@ export default async function ArticlePage({ params }: Props) {
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    datePublished: article.date,
+    author: { "@type": "Organization", name: "Quackenworth", url: "https://www.quackenworth.com" },
+    publisher: { "@type": "Organization", name: "Quackenworth", url: "https://www.quackenworth.com" },
+    url: `https://www.quackenworth.com/articles/${article.slug}`,
+    ...(article.heroImage && { image: `https://www.quackenworth.com${article.heroImage.src}` }),
+  };
+
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <main>
       <Breadcrumb
         items={[
           { label: "Articles", href: "/articles" },
@@ -202,5 +219,6 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </article>
     </main>
+    </>
   );
 }

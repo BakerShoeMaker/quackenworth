@@ -58,9 +58,39 @@ const promos = [
   },
 ];
 
+const appJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Time to Multiply",
+  operatingSystem: "iOS",
+  applicationCategory: "EducationApplication",
+  description:
+    "Time to Multiply helps elementary students build multiplication fact fluency with timed drills, visual grids, and instant feedback.",
+  url: "https://www.quackenworth.com/apps/time-to-multiply",
+  image: "https://www.quackenworth.com/time-to-multiply.png",
+  offers: {
+    "@type": "Offer",
+    price: "2.99",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+  },
+  educationalLevel: "Elementary School",
+  typicalAgeRange: "5-10",
+  author: {
+    "@type": "Organization",
+    name: "Quackenworth",
+    url: "https://www.quackenworth.com",
+  },
+};
+
 export default function TimeToMultiply() {
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }}
+      />
+      <main>
       <Breadcrumb
         items={[
           { label: "Apps", href: "/apps" },
@@ -250,5 +280,6 @@ export default function TimeToMultiply() {
       </section>
 
     </main>
+    </>
   );
 }
