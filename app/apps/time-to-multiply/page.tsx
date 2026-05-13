@@ -27,31 +27,31 @@ const screenshots = [
 
 const promos = [
   {
-    image: "/time-to-multiply-1.jpg",
+    image: "/time-to-multiply-4.PNG",
     alt: "Student practicing multiplication with Time to Multiply",
     headline: "Practice Makes Perfect",
     body: "Daily drills that adapt to each student's pace — short, focused sessions that build confidence and speed over time.",
   },
   {
-    image: "/time-to-multiply-2.jpg",
+    image: "/time-to-multiply-5.PNG",
     alt: "Multiplication grid view in Time to Multiply",
     headline: "Visual Grid Learning",
     body: "Color-coded multiplication grids give students a visual anchor for understanding how numbers relate — not just memorization.",
   },
   {
-    image: "/time-to-multiply-3.jpg",
+    image: "/time-to-multiply-1.PNG",
     alt: "Timed challenge mode in Time to Multiply",
     headline: "Timed Challenge Mode",
     body: "Ready to race the clock? Timed rounds push students to sharpen recall and build the automatic fluency they need in the classroom.",
   },
   {
-    image: "/time-to-multiply-4.jpg",
+    image: "/time-to-multiply-3.PNG",
     alt: "Instant feedback shown after answering in Time to Multiply",
     headline: "Instant Feedback",
     body: "Right or wrong, students know immediately — and see the correct answer displayed so every mistake becomes a learning moment.",
   },
   {
-    image: "/time-to-multiply-5.jpg",
+    image: "/time-to-multiply-2.PNG",
     alt: "Progress and results tracking in Time to Multiply",
     headline: "Track Your Progress",
     body: "Results screens show scores and streaks after every session, giving students — and parents — a clear view of improvement over time.",
