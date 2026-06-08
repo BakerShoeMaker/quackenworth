@@ -23,6 +23,85 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "summer-learning-loss-what-parents-can-do",
+    title: "Summer Learning Loss: What It Is and What Parents Can Do",
+    date: "2026-06-07",
+    excerpt:
+      "Research shows children can lose months of academic progress over summer break. Here's what summer learning loss actually means — and practical ways parents can help prevent it.",
+    tags: ["Parents", "Summer Learning", "K-12", "Learning Loss"],
+    heroImage: {
+      src: "/summer-learning-loss.png",
+      alt: "Father and young son sitting together at a table looking at an educational app on a phone",
+    },
+    content: `
+      <p>Every summer, millions of kids step away from school for two or three months — and research consistently shows that many of them return to class in the fall having lost measurable academic ground. This is called <strong>summer learning loss</strong>, and it is a well-documented pattern that affects students across grade levels and subjects.</p>
+      <p>Understanding what it is — and what actually helps — puts parents in a much better position to support their kids during the summer months.</p>
+
+      <h2>What is summer learning loss?</h2>
+      <p>Summer learning loss refers to the decline in academic skills and knowledge that can happen when children are out of school and not engaged in structured learning. It is sometimes called the "summer slide."</p>
+      <p>The effect is not uniform. Some subjects are more vulnerable than others. Research consistently shows that <strong>math skills</strong> tend to decline more than reading skills over summer, with some studies estimating that students lose roughly one to two months of grade-level math knowledge. (<a href="https://www.rand.org/pubs/research_reports/RRA1119-1.html" target="_blank" rel="noopener noreferrer">RAND Corporation</a>)</p>
+      <p>Reading and language skills also decline for many students, but children from homes with more books, reading exposure, and parent involvement tend to fare better than those without those supports. This is one reason the summer slide is considered an equity issue as well as an academic one.</p>
+
+      <h2>Why does it happen?</h2>
+      <p>Learning is not just stored — it is maintained through use. Skills that go unpracticed for weeks at a time become less automatic and less reliable. This is especially true for skills that depend on recall and fluency, like math facts, reading decoding, and vocabulary.</p>
+      <p>For younger children in particular, the summer break is a long time relative to how recently they learned foundational skills. A third grader who just finished learning multiplication facts in the spring has had those facts for only a few months. Two months without any practice can meaningfully erode that fluency.</p>
+      <p>The good news is that research also shows the summer slide is preventable. Children who engage in even modest amounts of learning activity over the summer experience significantly less loss than those who do nothing. (<a href="https://www.rand.org/pubs/research_reports/RRA1119-1.html" target="_blank" rel="noopener noreferrer">RAND Corporation</a>)</p>
+
+      <h2>How much do kids actually lose?</h2>
+      <p>Studies vary in their estimates, but the general picture is consistent:</p>
+      <ul>
+        <li>Students lose an average of about <strong>one to two months</strong> of math skills over summer</li>
+        <li>Reading loss is more variable — students from lower-income households tend to lose more, while some students from higher-income households maintain or even improve</li>
+        <li>The effects are cumulative — students who experience learning loss every summer fall further behind over time</li>
+        <li>The loss is real but <strong>reversible</strong> with consistent re-engagement in the fall</li>
+      </ul>
+      <p>The most important takeaway is not to panic, but to be intentional. A little goes a long way.</p>
+
+      <h2>What parents can do: practical strategies</h2>
+      <p>You do not need to run a full academic program at home. Short, consistent engagement makes a significant difference.</p>
+
+      <h3>Keep math alive in short sessions</h3>
+      <p>Math is the subject most at risk. Five to ten minutes of math practice a day — whether through an app, flashcards, or a workbook — is enough to maintain fluency. The key is consistency, not duration. A daily 10-minute routine beats one long session per week.</p>
+      <p>For younger children, keeping multiplication facts, addition, and subtraction sharp during summer means far less re-teaching when school resumes.</p>
+
+      <h3>Read every day — anything counts</h3>
+      <p>For reading, volume matters more than format. Audiobooks, graphic novels, library books, and even reading menus or road signs all engage language and comprehension skills. The goal is to keep kids' brains encountering words every day.</p>
+      <p>Visiting the library regularly and letting children choose their own books increases motivation and builds a habit around reading as enjoyment, not just school obligation.</p>
+
+      <h3>Use apps strategically</h3>
+      <p>Well-designed educational apps can make summer practice feel less like homework. Short, focused app sessions that target specific skills — math facts, phonics, spelling — give kids structured engagement without resistance.</p>
+      <p>Look for apps with clear feedback and measurable progress, so both you and your child can see improvement happening. That visibility builds motivation and helps you know which areas still need attention.</p>
+
+      <h3>Enroll in summer programs when possible</h3>
+      <p>Summer reading programs at public libraries, math camps, and structured enrichment activities all show positive effects on summer learning. Even part-time programs — a few weeks in mid-summer — help interrupt the slide during the longest gap from school.</p>
+      <p>Many districts and nonprofits also offer free or low-cost summer learning programs. It is worth checking what is available locally.</p>
+
+      <h3>Make learning part of everyday life</h3>
+      <p>Cooking involves fractions and measurement. Road trips involve map reading and mental math. Gardening, cooking, and home projects all offer natural opportunities for children to use academic skills in real contexts. This kind of informal, embedded learning does not replace structured practice, but it helps children see learning as something that continues outside of school.</p>
+
+      <h2>How much summer learning is enough?</h2>
+      <p>Research does not require a full summer curriculum. Studies suggest that even <strong>moderate engagement</strong> — reading regularly and doing some math practice — is enough to prevent most of the typical summer slide. (<a href="https://www.rand.org/pubs/research_reports/RRA1119-1.html" target="_blank" rel="noopener noreferrer">RAND Corporation</a>)</p>
+      <p>A reasonable target for most families is:</p>
+      <ul>
+        <li>20–30 minutes of reading per day</li>
+        <li>10–15 minutes of math practice per day</li>
+        <li>Some form of enrichment or structured activity a few days per week</li>
+      </ul>
+      <p>That is less than an hour per day. For most families, that is manageable — especially when the activities are enjoyable enough that children do not resist them.</p>
+
+      <h2>The long-term picture</h2>
+      <p>Summer learning loss is not just a short-term inconvenience. Research shows that cumulative summer learning loss over the elementary years contributes to significant gaps by middle school — particularly in math. Students who fall behind repeatedly have fewer opportunities to catch up as the content gets harder and faster-paced.</p>
+      <p>Preventing the slide each summer is one of the most effective things parents can do to support long-term academic success. It does not require a lot of time or money — it requires consistency and the right tools.</p>
+
+      <h2>Sources</h2>
+      <ol>
+        <li><strong>RAND Corporation</strong>, <em>Learning Loss During the Pandemic and Other Disruptions</em>. Reviews research on learning loss patterns, including summer slide effects and prevention strategies. (<a href="https://www.rand.org/pubs/research_reports/RRA1119-1.html" target="_blank" rel="noopener noreferrer">RAND</a>)</li>
+        <li><strong>Cooper et al.</strong>, <em>The Effects of Summer Vacation on Achievement Test Scores</em>, <em>Review of Educational Research</em> (1996). Meta-analysis establishing the summer learning loss pattern across subjects. (<a href="https://journals.sagepub.com/doi/10.3102/00346543066003227" target="_blank" rel="noopener noreferrer">SAGE Journals</a>)</li>
+        <li><strong>Alexander, Entwisle & Olson</strong>, <em>Lasting Consequences of the Summer Learning Gap</em>, <em>American Sociological Review</em> (2007). Examines cumulative effects of summer learning loss over elementary years. (<a href="https://journals.sagepub.com/doi/10.1177/000312240707200306" target="_blank" rel="noopener noreferrer">SAGE Journals</a>)</li>
+      </ol>
+    `,
+  },
+  {
     slug: "multiplication-patterns-kids-should-learn-first",
     title: "Multiplication Patterns Kids Should Learn First",
     date: "2026-04-23",

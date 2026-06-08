@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
+import IPhoneMockup from "../components/IPhoneMockup";
 import AppStoreBadge from "../components/AppStoreBadge";
 
 export const metadata: Metadata = {
@@ -23,6 +24,23 @@ export const metadata: Metadata = {
 // Set either to null to fall back to placeholder UI
 const apps = [
   {
+    id: 2,
+    name: "Fruit Rockets Multiplication 3",
+    tagline: "Blast off with Fruit Rockets!",
+    description:
+      "Blast off with Fruit Rockets! Kids launch fruit-powered rockets, solve times table problems, earn points, unlock awards, and build confidence one problem at a time.",
+    gradeLevel: "Elementary",
+    ageRange: "Ages 5–10",
+    subject: "Math",
+    isNew: false,
+    comingSoon: true,
+    appStoreUrl: null as string | null,
+    detailUrl: "/apps/fruit-rockets-multiplication-3" as string | null,
+    logoImage: "/fruit-rockets-icon.png" as string | null,
+    phoneFrame: "/fruit-rockets-start-page.PNG" as string | null,
+    screenshots: null as { src: string; alt: string }[] | null,
+  },
+  {
     id: 1,
     name: "Time to Multiply",
     tagline: "Build multiplication fact fluency — fast.",
@@ -32,9 +50,11 @@ const apps = [
     ageRange: "Ages 5–10",
     subject: "Math",
     isNew: true,
+    comingSoon: false,
     appStoreUrl: "https://apps.apple.com/us/app/time-to-multiply/id6760323272",
     detailUrl: "/apps/time-to-multiply",
     logoImage: "/time-to-multiply.png" as string | null,
+    phoneFrame: null as string | null,
     screenshots: [
       { src: "/time-to-multiply-screen with grid.png",     alt: "Time to Multiply — multiplication grid gameplay screen showing 11 × 11" },
       { src: "/time-to-multiply-screen with time number.png", alt: "Time to Multiply — timed gameplay screen showing 4 × 5" },
@@ -119,9 +139,14 @@ export default function Apps() {
               }`}
             >
 
-              {/* Screenshot — carousel if assets exist, placeholder otherwise */}
+              {/* Screenshot — carousel, iPhone mockup, or placeholder */}
               {app.screenshots ? (
                 <ScreenshotCarousel screenshots={app.screenshots} />
+              ) : app.phoneFrame ? (
+                <IPhoneMockup
+                  src={app.phoneFrame}
+                  alt={`${app.name} start screen`}
+                />
               ) : (
                 <div className="shrink-0 flex justify-center">
                   <div className="w-50 aspect-9/16 bg-gray-200 rounded-2xl shadow-md flex flex-col items-center justify-center text-gray-400 text-center px-4 gap-3">
@@ -181,6 +206,11 @@ export default function Apps() {
                     {app.isNew && (
                       <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
                         Now Available
+                      </span>
+                    )}
+                    {app.comingSoon && (
+                      <span className="inline-block bg-zinc-400 text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
+                        Coming Soon
                       </span>
                     )}
                   </div>

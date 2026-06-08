@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node -e \"const p = require\\(''./package.json''\\); console.log\\(''next:'', p.dependencies.next\\)\")",
       "Bash(npm run:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(findstr /i \"fruit-rockets\\\\|apps\\\\\\\\page\")"
     ]
   }
 }

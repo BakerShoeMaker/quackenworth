@@ -151,6 +151,79 @@ export default function Teachers() {
         </div>
       </section>
 
+      {/* ── Row 2b: Time to Multiply feature screenshots ── */}
+      <section className="bg-gray-50 py-16 px-6 border-b border-gray-100">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-zinc-700 text-center mb-3">
+            Features
+          </h2>
+          <p className="text-zinc-500 text-center mb-12 max-w-xl mx-auto">
+            Everything students need to build multiplication fluency through play.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                screenshot: "/time-to-multiply-1.PNG",
+                alt: "Time to Multiply gameplay showing 10 × 12 with a visual dot grid and three answer choices",
+                headline: "Visual multiplication grids",
+                body: "Every problem is backed by a dot grid so students can see the math — not just memorize it.",
+              },
+              {
+                screenshot: "/time-to-multiply-4.PNG",
+                alt: "Time to Multiply gameplay screen showing 3 × 10, labelled 1 out of 20",
+                headline: "Timed or untimed practice",
+                body: "Set a countdown timer or let students work at their own pace — whichever suits your lesson.",
+              },
+              {
+                screenshot: "/time-to-multiply-5.PNG",
+                alt: "Time to Multiply gameplay with fireworks celebrating a correct answer to 4 × 10",
+                headline: "Instant feedback and celebration",
+                body: "Fireworks and animations fire after every correct answer, keeping students motivated to keep going.",
+              },
+              {
+                screenshot: "/time-to-multiply-3.PNG",
+                alt: "Time to Multiply results screen showing correct, incorrect, total problems, and percent correct",
+                headline: "Detailed results after every round",
+                body: "Students and teachers see correct, incorrect, total problems, and percentage correct at a glance.",
+              },
+              {
+                screenshot: "/time-to-multiply-2.PNG",
+                alt: "Time to Multiply settings screen showing all-time stats and game configuration options",
+                headline: "Customizable practice settings",
+                body: "Choose which numbers to practice, set time limits, and control the number of problems per session.",
+              },
+              {
+                screenshot: "/time-to-multiply-6.PNG",
+                alt: "Time to Multiply settings screen showing language and sound options with a Play button",
+                headline: "Simple setup, any device",
+                body: "No login required. Students can start practicing in seconds on any iPhone.",
+              },
+            ].map((feature, i) => (
+              <div key={i} className="bg-white rounded-2xl overflow-hidden flex flex-col shadow-sm">
+                <div className="relative w-full aspect-9/16">
+                  <Image
+                    src={feature.screenshot}
+                    alt={feature.alt}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-lg font-bold text-zinc-700 mb-2">
+                    {feature.headline}
+                  </h3>
+                  <p className="text-zinc-500 text-sm leading-relaxed flex-1">
+                    {feature.body}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Row 3: Three-column feature cards ── */}
       <section className="bg-gray-50 py-20 px-6">
         <div className="max-w-5xl mx-auto">
