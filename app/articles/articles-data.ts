@@ -23,6 +23,93 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "fifteen-minutes-a-day-the-practice-habit-that-changes-everything",
+    title: "15 Minutes a Day: The Practice Habit That Changes Everything",
+    date: "2026-06-08",
+    excerpt:
+      "Getting good at something — anything — comes down to one thing: showing up consistently. Here's why 15 minutes of daily practice is more powerful than most parents and kids realize.",
+    tags: ["Parents", "Habits", "Multiplication", "Math", "Discipline", "K-12"],
+    heroImage: {
+      src: "/dad and child practicing.png",
+      alt: "Dad and young son sitting together on a couch looking at an educational app on a phone",
+    },
+    appPromo: {
+      href: "/apps/time-to-multiply",
+      appName: "Time to Multiply",
+      appIconSrc: "/time-to-multiply.png",
+      appIconAlt: "Time to Multiply app icon",
+      tagline: "Build multiplication fact fluency — fast.",
+      description:
+        "Time to Multiply is built around short, focused daily practice. Timed drills, instant feedback, and a visual grid help children build multiplication fluency one session at a time. A one-time purchase — no subscription required.",
+      videoSrc: "/promo-time-to-multiply-video.mp4",
+      images: [
+        {
+          src: "/time-to-multiply-1.jpg",
+          alt: "Student practicing multiplication with Time to Multiply",
+          caption: "Daily Practice",
+        },
+        {
+          src: "/time-to-multiply-4.jpg",
+          alt: "Instant feedback shown after answering in Time to Multiply",
+          caption: "Instant Feedback",
+        },
+        {
+          src: "/time-to-multiply-5.jpg",
+          alt: "Progress and results tracking in Time to Multiply",
+          caption: "Track Progress",
+        },
+      ],
+      ctaLabel: "Learn More About Time to Multiply",
+    },
+    content: `
+      <p>There is a simple truth behind every child who becomes good at math, music, reading, or anything else that requires skill: they practiced. Not once in a while. Not in long, exhausting sessions. They practiced a little bit, regularly, over time.</p>
+      <p>Fifteen minutes a day does not sound like much. But compounded over weeks and months, it is one of the most powerful things a child can do to improve at almost anything — and one of the most important habits a parent can help build.</p>
+
+      <h2>Getting good requires showing up</h2>
+      <p>We tend to think of talent as the explanation for why some kids excel and others struggle. But research on skill development consistently points to a different answer: <strong>deliberate practice</strong>. The children who get good at something are usually the ones who practice it regularly — not the ones who are naturally gifted and coast.</p>
+      <p>This matters because it means improvement is available to almost every child. It is not about being a "math person" or having a special gift. It is about showing up, doing the work, and doing it again tomorrow.</p>
+      <p>That idea is worth sharing directly with your kids. When a child understands that practice is the path — not some mysterious ability they either have or don't — it reframes struggle as a normal part of getting better, not as evidence that they can't do it.</p>
+
+      <h2>Why short daily sessions beat long occasional ones</h2>
+      <p>Many parents assume that more time equals more learning. But when it comes to skill-building, consistency outperforms duration. A child who practices multiplication for 15 minutes every day will develop stronger fluency than a child who does a 90-minute review session once a week — even though the weekly total is similar.</p>
+      <p>The reason is how memory works. Skills that are practiced frequently become more automatic over time. Each short session reinforces what was learned in the last one. That spaced repetition is far more effective at building lasting memory than a single long cram session.</p>
+      <p>Short sessions also reduce resistance. Asking a child to sit down for 15 minutes of math practice is a much easier conversation than asking for an hour. When practice feels manageable, children are more likely to engage fully — and more likely to agree to it again tomorrow.</p>
+
+      <h2>Discipline is a skill, not a personality trait</h2>
+      <p>One of the best things you can do for a child is help them understand that discipline is something you build — not something you either have or don't. Children who learn to show up for a task even when they don't feel like it are learning a skill that will serve them in every area of life.</p>
+      <p>A daily practice routine — even a short one — is one of the most direct ways to teach this. When a child sits down to practice multiplication at the same time each afternoon, they are learning to do a hard thing consistently. That habit of follow-through, built through small daily choices, is foundational.</p>
+      <p>It does not need to be framed as discipline in a heavy or punitive way. It can simply be part of the daily structure: this is what we do after school, just like brushing teeth before bed. The more automatic it becomes, the less willpower it requires — and that is exactly the goal.</p>
+
+      <h2>Productive habits start early</h2>
+      <p>The habits children form during the elementary years tend to stick. A third grader who learns to do a little bit of focused work every day is building a pattern of behavior that will carry into middle school, high school, and beyond. A child who learns early that effort produces results develops a relationship with hard work that pays dividends for years.</p>
+      <p>Parents are in a unique position to help establish those patterns. Not by forcing hours of homework or creating stress around practice, but by building simple, sustainable routines that normalize daily effort. Fifteen minutes of meaningful work, done consistently, teaches a child more about how to succeed than any single long study session ever will.</p>
+
+      <h2>Multiplication is a perfect place to build the habit</h2>
+      <p>Multiplication fluency is one of the clearest examples of a skill that responds directly to consistent practice. Children who know their multiplication facts automatically — who can recall 7 × 8 or 6 × 9 without stopping to think — have a significant advantage as math gets more complex. Division, fractions, algebra, and multi-step word problems all become easier when the underlying facts are automatic.</p>
+      <p>And multiplication fluency is built almost entirely through repetition. Understanding the concept comes first, but fluency — the ability to recall facts quickly and accurately — comes from practice. There is no shortcut. But there is a straightforward path: a little bit every day.</p>
+      <p>That is exactly what <strong>Time to Multiply</strong> is designed for. Short, focused sessions that give children the right kind of repetition — timed drills, visual support, and immediate feedback — in a format that works for daily practice. The goal is not a long homework session. It is five to fifteen focused minutes, done regularly, that build real fluency over time.</p>
+      <p>When children use Time to Multiply as part of a daily routine, the practice becomes normal. They know what to expect, they can see their progress, and they start to feel the satisfaction that comes from getting faster and more accurate over time. That feeling of earned improvement is one of the best motivators there is.</p>
+
+      <h2>What a 15-minute practice routine can look like</h2>
+      <p>A daily practice routine does not need to be complicated. Here is one simple structure that works well for elementary-age children:</p>
+      <ul>
+        <li><strong>Minutes 1–3:</strong> Warm up with a set of easier, familiar facts. Start from a place of confidence.</li>
+        <li><strong>Minutes 4–12:</strong> Focus on the facts that need work. Use Time to Multiply to get structured repetition with immediate feedback.</li>
+        <li><strong>Minutes 13–15:</strong> End with a quick review of what improved. Name the progress. Let the child feel good about what they accomplished.</li>
+      </ul>
+      <p>That is it. Fifteen minutes. Done the same way, at the same time, as many days a week as possible. The routine itself is part of what makes it work — when practice is predictable, children spend less mental energy resisting it and more energy actually doing it.</p>
+
+      <h2>Talk to your kids about why practice matters</h2>
+      <p>Children are more motivated when they understand the purpose behind what they are doing. Take a few minutes to explain the idea directly: if you want to be good at something, you have to practice. That is how it works — for athletes, for musicians, for writers, and for mathematicians.</p>
+      <p>You might point to something your child already does well and trace it back to repetition. Can they ride a bike? That took practice. Can they read chapter books? That took practice. Multiplication is no different. The facts feel hard now, but with regular practice, they will start to feel automatic — and that is a feeling worth working toward.</p>
+      <p>When children internalize that connection between effort and improvement, they start to approach challenges differently. Practice becomes something they do because it works, not just something parents ask them to do. That shift — from external pressure to internal motivation — is one of the most valuable things a child can develop.</p>
+
+      <h2>A small investment with a lasting return</h2>
+      <p>Fifteen minutes a day is not a large ask. But over a school year, it adds up to more than 45 hours of focused practice. That is enough to build real fluency, establish a strong work habit, and give a child genuine confidence in a skill that will matter throughout their education.</p>
+      <p>Start small. Start consistent. Let the habit do the work.</p>
+    `,
+  },
+  {
     slug: "summer-learning-loss-what-parents-can-do",
     title: "Summer Learning Loss: What It Is and What Parents Can Do",
     date: "2026-06-07",
