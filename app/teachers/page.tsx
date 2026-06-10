@@ -4,6 +4,7 @@ import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
 import AppStoreBadge from "../components/AppStoreBadge";
+import IPhoneMockup from "../components/IPhoneMockup";
 
 export const metadata: Metadata = {
   title: "For Teachers | Quackenworth Classroom Tools & Resources",
@@ -64,8 +65,82 @@ export default function Teachers() {
         </div>
       </section>
 
-      {/* ── Row 2: Featured App — Time to Multiply ── */}
+      {/* ── Row 2: Featured App — Fruit Rockets Multiplication 3 ── */}
       <section className="bg-white py-16 px-6 border-b border-gray-100">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+
+            <IPhoneMockup
+              src="/fruit-rockets-start-page.PNG"
+              alt="Fruit Rockets Multiplication 3 start screen"
+            />
+
+            {/* App details */}
+            <div className="flex-1 text-center md:text-left">
+
+              {/* Grade level + metadata badges */}
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-5">
+                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#00aeef]/10 text-[#00aeef]">
+                  Elementary
+                </span>
+                <span className="text-xs text-zinc-400">Ages 5–10</span>
+                <span className="text-xs text-zinc-400">· Math</span>
+              </div>
+
+              <div className="flex items-center justify-center md:justify-start gap-4 mb-3">
+                <Image
+                  src="/fruit-rockets-icon.png"
+                  alt="Fruit Rockets Multiplication 3 app icon"
+                  width={64}
+                  height={64}
+                  className="rounded-2xl shadow-sm shrink-0"
+                />
+                <div className="flex flex-wrap items-center gap-3">
+                  <h2 className="text-3xl md:text-4xl font-bold text-zinc-700">
+                    Fruit Rockets Multiplication 3
+                  </h2>
+                  <span className="inline-block bg-[#F5A623] text-white text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
+                    Now Available
+                  </span>
+                </div>
+              </div>
+
+              <p className="text-lg text-[#00aeef] font-medium mb-5">
+                Blast off with Fruit Rockets!
+              </p>
+              <p className="text-zinc-500 leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+                Fruit Rockets 3 turns multiplication practice into a classroom-ready game.
+                Students choose the correct answer rocket and launch it toward the target —
+                earning points and unlocking awards while building times table fluency.
+                Supports multiple profiles so every student can track their own progress.
+              </p>
+
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                <a
+                  href="https://apps.apple.com/us/app/fruit-rockets-3-multiplication/id6764722296"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Download Fruit Rockets Multiplication 3 on the App Store"
+                  className="inline-flex hover:opacity-80 transition-opacity"
+                >
+                  <AppStoreBadge />
+                </a>
+                <Link
+                  href="/apps/fruit-rockets-multiplication-3"
+                  className="text-[#00aeef] font-semibold hover:underline"
+                >
+                  Learn more →
+                </Link>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ── Row 3: Featured App — Time to Multiply ── */}
+      <section className="bg-gray-50 py-16 px-6 border-b border-gray-100">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12">
 

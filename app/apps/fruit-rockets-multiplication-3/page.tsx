@@ -3,15 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb";
 import IPhoneMockup from "../../components/IPhoneMockup";
+import AppStoreBadge from "../../components/AppStoreBadge";
 
 export const metadata: Metadata = {
   title: "Fruit Rockets Multiplication 3 | Math App for Kids — Quackenworth",
   description:
-    "Fruit Rockets Multiplication 3 turns times table practice into a fun rocket-launching game. Kids solve multiplication problems, earn points, and unlock awards. Coming soon.",
+    "Fruit Rockets Multiplication 3 turns times table practice into a fun rocket-launching game. Kids solve multiplication problems, earn points, and unlock awards. Available now on the App Store.",
   openGraph: {
     title: "Fruit Rockets Multiplication 3 | Math App for Kids — Quackenworth",
     description:
-      "Fruit Rockets Multiplication 3 turns times table practice into a fun rocket-launching game. Kids solve multiplication problems, earn points, and unlock awards. Coming soon.",
+      "Fruit Rockets Multiplication 3 turns times table practice into a fun rocket-launching game. Kids solve multiplication problems, earn points, and unlock awards. Available now on the App Store.",
     images: ["/fruit-rockets-icon.png"],
   },
 };
@@ -74,7 +75,8 @@ const appJsonLd = {
   image: "https://www.quackenworth.com/fruit-rockets-icon.png",
   offers: {
     "@type": "Offer",
-    availability: "https://schema.org/PreOrder",
+    availability: "https://schema.org/InStock",
+    url: "https://apps.apple.com/us/app/fruit-rockets-3-multiplication/id6764722296",
   },
   educationalLevel: "Elementary School",
   typicalAgeRange: "5-10",
@@ -112,8 +114,8 @@ export default function FruitRocketsMultiplication3() {
                 </span>
                 <span className="text-xs text-zinc-400">Ages 5–10</span>
                 <span className="text-xs text-zinc-400">· Math</span>
-                <span className="inline-block bg-zinc-400 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-                  Coming Soon
+                <span className="inline-block bg-[#F5A623] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                  Now Available
                 </span>
               </div>
 
@@ -267,13 +269,21 @@ export default function FruitRocketsMultiplication3() {
         <section className="bg-[#1a2f4a] py-20 px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Coming Soon
+              Available Now on the App Store
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Fruit Rockets Multiplication 3 is currently in development.
-              Check back soon to download it on the App Store.
+              Download Fruit Rockets Multiplication 3 and start blasting off with math practice today.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 items-center">
+              <a
+                href="https://apps.apple.com/us/app/fruit-rockets-3-multiplication/id6764722296"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download Fruit Rockets Multiplication 3 on the App Store"
+                className="inline-flex hover:opacity-80 transition-opacity"
+              >
+                <AppStoreBadge />
+              </a>
               <Link
                 href="/apps"
                 className="border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:border-[#00aeef] hover:text-[#00aeef] transition-colors"
