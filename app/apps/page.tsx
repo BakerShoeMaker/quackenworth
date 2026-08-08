@@ -4,6 +4,7 @@ import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 import ScreenshotCarousel from "../components/ScreenshotCarousel";
 import IPhoneMockup from "../components/IPhoneMockup";
+import IPadMockup from "../components/IPadMockup";
 import AppStoreBadge from "../components/AppStoreBadge";
 
 export const metadata: Metadata = {
@@ -24,6 +25,78 @@ export const metadata: Metadata = {
 // Set either to null to fall back to placeholder UI
 const apps = [
   {
+    id: 6,
+    name: "Remixed Fairy Tales",
+    tagline: "Five remixed fairy tales with fun twists!",
+    description:
+      "Five remixed fairy tales with fun twists! Kids can read or watch The Three Little Figs, The Gingerbread Scam, Silly Goats' Bluff, Salmonella: A Germ-Packed Love Story, and Moldy Socks and the Three Little Hares.",
+    gradeLevel: "Elementary",
+    ageRange: "Ages 4–8",
+    subject: "Reading",
+    isNew: false,
+    comingSoon: true,
+    appStoreUrl: null as string | null,
+    detailUrl: "/apps/remixed-fairy-tales" as string | null,
+    logoImage: "/remixed-fairytales/180.png" as string | null,
+    phoneFrame: null as string | null,
+    padFrame: "/remixed-fairytales/remix-series-1.jpg" as string | null,
+    screenshots: null as { src: string; alt: string }[] | null,
+  },
+  {
+    id: 5,
+    name: "Learn to Read: Vowel Stories 2",
+    tagline: "Build early reading skills with fun vowel stories.",
+    description:
+      "Build early reading skills with fun short and long vowel stories. Read, listen, watch, and practice phonics through engaging stories made for beginning readers.",
+    gradeLevel: "Elementary",
+    ageRange: "Ages 4–8",
+    subject: "Reading",
+    isNew: false,
+    comingSoon: true,
+    appStoreUrl: null as string | null,
+    detailUrl: "/apps/vowel-stories-2" as string | null,
+    logoImage: "/vowel-stories/180.png" as string | null,
+    phoneFrame: null as string | null,
+    padFrame: "/vowel-stories/vowel-stories-1.jpg" as string | null,
+    screenshots: null as { src: string; alt: string }[] | null,
+  },
+  {
+    id: 4,
+    name: "DJ and the Grumpy Tree",
+    tagline: "A story about sharing.",
+    description:
+      "DJ and the Grumpy Tree is a magical children's story about a boy, a talking apple tree, and the lesson that sharing can make the whole park happier.",
+    gradeLevel: "Elementary",
+    ageRange: "Ages 4–8",
+    subject: "Reading",
+    isNew: false,
+    comingSoon: true,
+    appStoreUrl: null as string | null,
+    detailUrl: "/apps/dj-and-the-grumpy-tree" as string | null,
+    logoImage: "/djandgrumpytree/180.png" as string | null,
+    phoneFrame: null as string | null,
+    padFrame: "/djandgrumpytree/dj-and-the-grumpy-tree-1.jpg" as string | null,
+    screenshots: null as { src: string; alt: string }[] | null,
+  },
+  {
+    id: 3,
+    name: "The Witty Bitty Bunch: Read & Rhyme Series",
+    tagline: "Ready to Read: Rhyming Stories",
+    description:
+      "Ready to Read: Rhyming Stories helps young readers build confidence through short, fun, animated stories designed for beginning readers. Children can read along with simple rhyming stories featuring lovable characters like Pete, Joe, Kim, Mike, Paul, Jenny, and more. Each story uses playful rhyme, repetition, and easy-to-follow language to support early literacy skills in a fun and engaging way.",
+    gradeLevel: "Elementary",
+    ageRange: "Ages 3–7",
+    subject: "Reading",
+    isNew: false,
+    comingSoon: true,
+    appStoreUrl: null as string | null,
+    detailUrl: "/apps/read-and-rhyme" as string | null,
+    logoImage: "/read-and-rhyme-icon.jpg" as string | null,
+    phoneFrame: null as string | null,
+    padFrame: "/read-and-rhyme-bookshelf.jpg" as string | null,
+    screenshots: null as { src: string; alt: string }[] | null,
+  },
+  {
     id: 2,
     name: "Fruit Rockets Multiplication 3",
     tagline: "Blast off with Fruit Rockets!",
@@ -38,6 +111,7 @@ const apps = [
     detailUrl: "/apps/fruit-rockets-multiplication-3" as string | null,
     logoImage: "/fruit-rockets-icon.png" as string | null,
     phoneFrame: "/fruit-rockets-start-page.PNG" as string | null,
+    padFrame: null as string | null,
     screenshots: null as { src: string; alt: string }[] | null,
   },
   {
@@ -55,6 +129,7 @@ const apps = [
     detailUrl: "/apps/time-to-multiply",
     logoImage: "/time-to-multiply.png" as string | null,
     phoneFrame: null as string | null,
+    padFrame: null as string | null,
     screenshots: [
       { src: "/time-to-multiply-screen with grid.png",     alt: "Time to Multiply — multiplication grid gameplay screen showing 11 × 11" },
       { src: "/time-to-multiply-screen with time number.png", alt: "Time to Multiply — timed gameplay screen showing 4 × 5" },
@@ -139,9 +214,14 @@ export default function Apps() {
               }`}
             >
 
-              {/* Screenshot — carousel, iPhone mockup, or placeholder */}
+              {/* Screenshot — carousel, iPad mockup, iPhone mockup, or placeholder */}
               {app.screenshots ? (
                 <ScreenshotCarousel screenshots={app.screenshots} />
+              ) : app.padFrame ? (
+                <IPadMockup
+                  src={app.padFrame}
+                  alt={`${app.name} start screen`}
+                />
               ) : app.phoneFrame ? (
                 <IPhoneMockup
                   src={app.phoneFrame}

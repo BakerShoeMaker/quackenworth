@@ -26,6 +26,45 @@ export default function Promos() {
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold text-zinc-700 mb-6 text-center">
+            DJ and the Grumpy Tree
+          </h2>
+
+          <div className="w-full">
+            <video
+              src="/djandgrumpytree/dj-and-grumpy-tree-promo-final.mp4"
+              controls
+              playsInline
+              className="w-full aspect-video object-cover rounded-xl shadow-md"
+            />
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-zinc-700 mt-16 mb-6 text-center">
+            Learn to Read: Vowel Stories 2
+          </h2>
+
+          <div className="w-full">
+            <video
+              src="/vowel-stories/vowel-stories-promo-final.mp4"
+              controls
+              playsInline
+              className="w-full aspect-video object-cover rounded-xl shadow-md"
+            />
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-zinc-700 mt-16 mb-6 text-center">
+            Remixed Fairy Tales
+          </h2>
+
+          <div className="w-full">
+            <video
+              src="/remixed-fairytales/remix-series-promo-final.mp4"
+              controls
+              playsInline
+              className="w-full aspect-video object-cover rounded-xl shadow-md"
+            />
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-zinc-700 mt-16 mb-6 text-center">
             Fruit Rocket 3 — Coming Soon
           </h2>
 

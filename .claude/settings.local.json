@@ -4,7 +4,29 @@
       "Bash(node -e \"const p = require\\(''./package.json''\\); console.log\\(''next:'', p.dependencies.next\\)\")",
       "Bash(npm run:*)",
       "Bash(npm install:*)",
-      "Bash(findstr /i \"fruit-rockets\\\\|apps\\\\\\\\page\")"
+      "Bash(findstr /i \"fruit-rockets\\\\|apps\\\\\\\\page\")",
+      "Bash(find /tmp -newer /tmp -iname \"*.png\" -o -iname \"*.jpg\" 2>/dev/null | head -20; echo \"---appdata temp---\"; find \"C:/Users/holla/AppData/Local/Temp\" -mmin -15 \\\\\\( -iname \"*.png\" -o -iname \"*.jpg\" -o -iname \"*.jpeg\" \\\\\\) 2>/dev/null | head -20)",
+      "Read(//q/tmp/**)",
+      "Read(//c/Users/holla/AppData/Local/Temp/**)",
+      "Bash(find \"C:/Users/holla/AppData/Local/Temp/claude\" -mmin -30 2>/dev/null | head -50)",
+      "Read(//c/Users/holla/AppData/Local/Temp/claude/**)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"q:\\\\Projects_Websites\\\\quackenworth\\\\public\\\\witty-bitty-bunch-read-and-rhyme\\\\180-100.jpg\"\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "Bash(cp \"q:/Projects_Websites/quackenworth/public/witty-bitty-bunch-read-and-rhyme/ipad-main scene.jpg\" \"q:/Projects_Websites/quackenworth/public/read-and-rhyme-bookshelf.jpg\")",
+      "Bash(cp \"q:/Projects_Websites/quackenworth/public/witty-bitty-bunch-read-and-rhyme/180-100.jpg\" \"q:/Projects_Websites/quackenworth/public/read-and-rhyme-icon.jpg\")",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(timeout 40 bash -c 'until curl -sf http://localhost:3000 >/dev/null; do sleep 1; done')",
+      "Bash(chromium-cli --session apps-desktop)",
+      "Bash(node -e \"require\\('playwright'\\); console.log\\('has playwright'\\)\")",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npx --yes playwright install chromium --with-deps)",
+      "Bash(node --experimental-vm-modules \"C:/Users/holla/AppData/Local/Temp/claude/q--Projects-Websites-quackenworth/3d225bd9-b4f1-4d0a-8547-507cb450aed9/scratchpad/screenshot-apps.mjs\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{content_type} %{size_download}\\\\n\" \"http://localhost:3000/read-and-rhyme-bookshelf.jpg\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{content_type} %{size_download}\\\\n\" \"http://localhost:3000/_next/image?url=%2Fread-and-rhyme-bookshelf.jpg&w=1080&q=75\")",
+      "Bash(lsof -ti:3000 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"q:\\\\Projects_Websites\\\\quackenworth\\\\public\\\\vowel-stories\\\\vowel-stories-1.jpg\"\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "Bash(ffmpeg -version)"
     ]
   }
 }
